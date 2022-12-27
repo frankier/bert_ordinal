@@ -7,11 +7,10 @@ import pickle
 from os.path import join as pjoin
 from typing import List, Optional, Tuple, Union
 
+import datasets
 import pandas
 import pyarrow
 from sklearn.model_selection import train_test_split
-
-import datasets
 
 
 def dec_label(row):

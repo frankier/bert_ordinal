@@ -6,6 +6,7 @@ import os
 from itertools import repeat
 
 import pytest
+from datasets import load_dataset
 from transformers import TrainingArguments
 
 from bert_ordinal import (
@@ -18,7 +19,6 @@ from bert_ordinal.baseline_models.classification import (
 )
 from bert_ordinal.element_link import DEFAULT_LINK_NAME
 from bert_ordinal.ordinal_models.bert import DEFAULT_MULTI_LABEL_DISCRIMINATION_MODE
-from datasets import load_dataset
 
 FIXTURE_DIR = os.path.join(
     os.path.dirname(os.path.realpath(__file__)),
